@@ -1,0 +1,127 @@
+/* ==========================================
+   LivrExpress — Custom Styles
+   ========================================== */
+
+/* ---- Animations ---- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-15px); }
+}
+
+@keyframes floatingShape {
+    0%, 100% { transform: translateY(0) scale(1); opacity: 0.3; }
+    50%      { transform: translateY(-30px) scale(1.2); opacity: 0.6; }
+}
+
+@keyframes pingSlow {
+    0%   { transform: scale(1); opacity: 0.8; }
+    75%, 100% { transform: scale(2.5); opacity: 0; }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-out both;
+}
+
+.animate-fade-in-right {
+    animation: fadeInRight 1s ease-out 0.3s both;
+}
+
+.animate-float {
+    animation: float 4s ease-in-out infinite;
+}
+
+.floating-shape {
+    animation: floatingShape 6s ease-in-out infinite;
+}
+
+.animate-ping-slow {
+    animation: pingSlow 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* ---- Smooth Scroll ---- */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ---- Navbar scrolled state ---- */
+nav.scrolled {
+    background: rgba(30, 58, 138, 0.95) !important;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+}
+
+nav.scrolled .navbar-logo-text {
+    color: white;
+}
+
+/* ---- Selection ---- */
+::selection {
+    background-color: #3b82f6;
+    color: white;
+}
+
+/* ---- Scrollbar ---- */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #93c5fd;
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3b82f6;
+}
+
+/* ---- Scroll animation (reveal on scroll) ---- */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ---- Counter styling ---- */
+.counter {
+    font-variant-numeric: tabular-nums;
+}
+
+/* ---- Focus ring ---- */
+input:focus, textarea:focus, button:focus-visible {
+    outline: none;
+}
+
+/* ---- Slide down animation ---- */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.97);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.animate-slide-down {
+    animation: slideDown 0.25s cubic-bezier(0.16, 1, 0.3, 1) both;
+}

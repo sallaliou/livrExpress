@@ -1,0 +1,13 @@
+# Environments and local configs
+.env
+.env.local
+
+# IDE & OS
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store
+
+# Temporary & cache
+*.log
+data/rate_limit.json

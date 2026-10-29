@@ -1,0 +1,21 @@
+[
+    {
+        "id": "msg_6ae0cf76a78715.58362197",
+        "name": "Aliou SALL",
+        "phone": "773667724",
+        "message": "Je souhaite être livré de Mbakhal saloum",
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/155.0.0.0 Safari\/537.36",
+        "created_at": "2026-10-27 16:21:10"
+    },
+    {
+        "id": "cmd_6ae1d78db6d060.12230148",
+        "name": "Aliou Sall",
+        "phone": "+221 77 123 45 67",
+        "message": "Demande de livraison pour test de validation",
+        "status": "nouvelle",
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT; Windows NT 10.0; fr-FR) WindowsPowerShell\/5.1.26100.7920",
+        "created_at": "2026-10-28 11:07:57"
+    }
+]
